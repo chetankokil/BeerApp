@@ -1,3 +1,4 @@
-<h1>
-  {{title}}
-</h1>
+<div *ngFor="let beer of beers">
+  {{beer.name}}<br>
+  <img width="200" src="{{beer.giphyUrl}}" alt="{{beer.name}}">
+</div>
